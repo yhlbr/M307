@@ -1,0 +1,122 @@
+[
+  {
+    "id": 20,
+    "name": "Nissan",
+    "kraftstoff": "Elektrisch",
+    "farbe": "#00dd00",
+    "bauart": "Limousine",
+    "betankungen": 5
+  },
+  {
+    "id": 14,
+    "name": "Smart",
+    "kraftstoff": "Benzin",
+    "farbe": "#000000",
+    "bauart": "Cabrio",
+    "betankungen": 13
+  },
+  {
+    "id": 13,
+    "name": "Mercedes",
+    "kraftstoff": "Benzin",
+    "farbe": "#3900f7",
+    "bauart": "Kombi",
+    "betankungen": 2
+  },
+  {
+    "id": 12,
+    "name": "Audi",
+    "kraftstoff": "Benzin",
+    "farbe": "#00f7ea",
+    "bauart": "Coupe",
+    "betankungen": 5
+  },
+  {
+    "id": 11,
+    "name": "BMW",
+    "kraftstoff": "Benzin",
+    "farbe": "#f70046",
+    "bauart": "Coupe",
+    "betankungen": 3
+  },
+  {
+    "id": 10,
+    "name": "Renault",
+    "kraftstoff": "Benzin",
+    "farbe": "#9800ff",
+    "bauart": "Cabrio",
+    "betankungen": 9
+  },
+  {
+    "id": 9,
+    "name": "Ferrari",
+    "kraftstoff": "Benzin",
+    "farbe": "#f70000",
+    "bauart": "Cabrio",
+    "betankungen": 4
+  },
+  {
+    "id": 8,
+    "name": "Lamborghini",
+    "kraftstoff": "Benzin",
+    "farbe": "#f7ef00",
+    "bauart": "Cabrio",
+    "betankungen": 4
+  },
+  {
+    "id": 7,
+    "name": "Audi",
+    "kraftstoff": "Benzin",
+    "farbe": "#006ff7",
+    "bauart": "Limousine",
+    "betankungen": 6
+  },
+  {
+    "id": 6,
+    "name": "Tesla",
+    "kraftstoff": "Elektrisch",
+    "farbe": "#67f700",
+    "bauart": "Cabrio",
+    "betankungen": 4
+  },
+  {
+    "id": 5,
+    "name": "Touareg",
+    "kraftstoff": "Diesel",
+    "farbe": "#000000",
+    "bauart": "Cabrio",
+    "betankungen": 4
+  },
+  {
+    "id": 4,
+    "name": "Golf 6",
+    "kraftstoff": "Diesel",
+    "farbe": "#FF0000",
+    "bauart": "Limousine",
+    "betankungen": 3
+  },
+  {
+    "id": 3,
+    "name": "Golf 7",
+    "kraftstoff": "Benzin",
+    "farbe": "#ffaa00",
+    "bauart": "Cabrio",
+    "betankungen": 2
+  },
+  {
+    "id": 2,
+    "name": "Skoda",
+    "kraftstoff": "Diesel",
+    "farbe": "#f700f3",
+    "bauart": "Limousine",
+    "betankungen": 0
+  },
+  {
+    "id": 1,
+    "name": "Passat",
+    "kraftstoff": "Diesel",
+    "farbe": "#000000",
+    "bauart": "Limousine",
+    "betankungen": 0
+  }
+]

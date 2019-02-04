@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Index</title>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Home</a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a id="seite1" href="#">Seite 1</a></li>
+                    <li><a id="seite2" href="#">Seite 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="http://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list">HTML 5</a></li>
+        <li><a href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Referenz">CSS 3</a></li>
+    </ul>
+</header>
+<main>
+    <div class="container">
+        <div id="content">
+            Inhalt wird geladen...
+        </div>
+    </div>
+</main>
+</body>
+</html>

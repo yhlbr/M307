@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb594cc4-c9f1-4019-99bd-3e74467915d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307Tpl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A6/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A6/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/content/cars.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/content/seite1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/content/seite2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A7/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A8/cars.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A8/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A8/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M307_A8/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M30701/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M30701/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M30701/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307Noten/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/M307Tpl/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307Noten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_A6/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307Noten/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/M307Tpl/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_basic_template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_basic_template/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,24 +33,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/M307_basic_template/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M307_A8/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="416">
+              <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_basic_template/js/index.js">
+        <entry file="file://$PROJECT_DIR$/M307_A8/cars.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="160">
+              <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/M307_A8/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -39,11 +65,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lang=&quot;en&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>lang=&quot;de&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +90,19 @@
         <option value="$PROJECT_DIR$/M30701/index.html" />
         <option value="$PROJECT_DIR$/M30701/js/index.js" />
         <option value="$PROJECT_DIR$/M307_basic_template/js/index.js" />
+        <option value="$PROJECT_DIR$/M307Noten/index.html" />
+        <option value="$PROJECT_DIR$/M307_A6/js/index.js" />
+        <option value="$PROJECT_DIR$/M307_A6/index.html" />
+        <option value="$PROJECT_DIR$/M307_A7/content/seite2.json" />
+        <option value="$PROJECT_DIR$/M307_A7/index.html" />
         <option value="$PROJECT_DIR$/M307_basic_template/index.html" />
+        <option value="$PROJECT_DIR$/M307_A7/content/cars.json" />
+        <option value="$PROJECT_DIR$/M307_A7/css/index.css" />
+        <option value="$PROJECT_DIR$/M307_A7/content/seite1.html" />
+        <option value="$PROJECT_DIR$/M307_A7/js/index.js" />
+        <option value="$PROJECT_DIR$/M307_A8/cars.json" />
+        <option value="$PROJECT_DIR$/M307_A8/js/index.js" />
+        <option value="$PROJECT_DIR$/M307_A8/index.html" />
       </list>
     </option>
   </component>
@@ -65,6 +111,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -81,23 +130,12 @@
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_basic_template" type="462c0819:PsiDirectoryNode" />
+              <item name="M307_A8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_basic_template" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M30701" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M30701" type="462c0819:PsiDirectoryNode" />
+              <item name="M307_A8" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -112,7 +150,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\xampp\htdocs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,18 +182,18 @@
       <updated>1549267743354</updated>
       <workItem from="1549267746074" duration="611000" />
       <workItem from="1549268385199" duration="28000" />
-      <workItem from="1549282640690" duration="1498000" />
+      <workItem from="1549282640690" duration="7704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2137000" />
+    <option name="totallyTimeSpent" value="8343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -199,6 +243,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/M307Tpl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A6/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A6/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A7/content/seite2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/M307_basic_template/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -208,12 +280,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/M307_basic_template/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="286">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A7/content/cars.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A7/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A7/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A7/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="75" column="61" lean-forward="true" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#load_seite2#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A7/content/seite1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="24" column="96" lean-forward="true" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A8/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A8/cars.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_A8/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
         </state>
       </provider>
     </entry>

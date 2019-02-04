@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Index</title>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Kraftstoff</td>
+            <td>Farbe</td>
+            <td>Bauart</td>
+            <td>Tank</td>
+            <td>Aktion</td>
+        </tr>
+        </thead>
+        <tbody id="autos_liste_anzeige">
+        <tr id="autos_liste_template">
+            <td id="autos_id">{{id}}</td>
+            <td id="autos_name"><i class="material-icons">directions_car</i> {{name}}</td>
+            <td id="autos_kraftstoff">{{kraftstoff}}</td>
+            <td id="autos_farbe">{{farbe}}</td>
+            <td id="autos_bauart">{{bauart}}</td>
+            <td id="autos_tank">{{betankungen}}</td>
+            <td>
+                <i class="clickable material-icons green-text" onclick="fill_car({{id}})">directions_car</i>
+                <i class="clickable material-icons blue-text" onclick="edit_car({{id}})">edit</i>
+                <i class="clickable material-icons red-text" onclick="delete_car({{id}})">delete</i>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<p>Hallo Welt. Hier die Tabelle:</p>
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Kraftstoff</td>
+        <td>Farbe</td>
+        <td>Bauart</td>
+        <td>Tank</td>
+        <td>Aktion</td>
+    </tr>
+    </thead>
+    <tbody id="autos_liste_anzeige">
+    <tr id="autos_liste_template">
+        <td id="autos_id">id</td>
+        <td id="autos_name"><i class="material-icons">directions_car</i> </td>
+        <td id="autos_kraftstoff">Kraftstoff</td>
+        <td id="autos_farbe">Farbe</td>
+        <td id="autos_bauart">bauart</td>
+        <td id="autos_tank">tankstand</td>
+        <td>
+            <i class="clickable material-icons green-text" onclick="fill_car({{id}})">directions_car</i>
+            <i class="clickable material-icons blue-text" onclick="edit_car({{id}})">edit</i>
+            <i class="clickable material-icons red-text" onclick="delete_car({{id}})">delete</i>
+        </td>
+    </tr>
+    </tbody>
+</table>
