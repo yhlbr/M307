@@ -95,68 +95,67 @@
         </div>
     </div>
 </footer>
-<div id="modal_add" class="modal modal-fixed-footer">
+<form id="modal_add" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4>Auto hinzufügen</h4>
-        <form id="add_car">
-            <div class="row">
-                <div class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">assignment</i>
-                            <input id="autoname" name="autoname" type="text" class="validate">
-                            <label for="autoname">Auto-Name</label>
-                        </div>
+        <p class="red" id="error"></p>
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">assignment</i>
+                        <input id="autoname" name="autoname" type="text" class="validate" required>
+                        <label for="autoname">Auto-Name</label>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">battery_std</i>
-                            <select id="kraftstoff" name="kraftstoff">
-                                <option value="" disabled="" selected="">Bitte Kraftstoff wählen</option>
-                                <option value="Benzin">Benzin</option>
-                                <option value="Diesel">Diesel</option>
-                                <option value="Ethanol">Ethanol</option>
-                                <option value="Hybrid">Hybrid</option>
-                                <option value="Elektrisch">Elektrisch</option>
-                            </select>
-                            <label>Kraftstoff</label>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">battery_std</i>
+                        <select id="kraftstoff" name="kraftstoff" required>
+                            <option value="" disabled="" selected="">Bitte Kraftstoff wählen</option>
+                            <option value="Benzin">Benzin</option>
+                            <option value="Diesel">Diesel</option>
+                            <option value="Ethanol">Ethanol</option>
+                            <option value="Hybrid">Hybrid</option>
+                            <option value="Elektrisch">Elektrisch</option>
+                        </select>
+                        <label>Kraftstoff</label>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">directions_car</i>
-                            <select id="bauart" name="bauart">
-                                <option value="" disabled="" selected="">Bitte Bauart wählen</option>
-                                <option value="Cabrio">Cabrio</option>
-                                <option value="Limousine">Limousine</option>
-                                <option value="Kombi">Kombi</option>
-                                <option value="Sportwagen">Sportwagen</option>
-                                <option value="Oldtimer">Oldtimer</option>
-                                <option value="Coupe">Coupe</option>
-                            </select>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">directions_car</i>
+                        <select id="bauart" name="bauart" required>
+                            <option value="" disabled="" selected="">Bitte Bauart wählen</option>
+                            <option value="Cabrio">Cabrio</option>
+                            <option value="Limousine">Limousine</option>
+                            <option value="Kombi">Kombi</option>
+                            <option value="Sportwagen">Sportwagen</option>
+                            <option value="Oldtimer">Oldtimer</option>
+                            <option value="Coupe">Coupe</option>
+                        </select>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12 m12 l12">
-                            <i class="material-icons prefix">invert_colors</i>
-                            <input id="farbe" type="color" value="#000000" list="colors">
-                            <datalist id="colors">
-                                <option>#ff0000</option>
-                                <option>#0000ff</option>
-                                <option>#00ff00</option>
-                                <option>#ffff00</option>
-                                <option>#00ffff</option>
-                            </datalist>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l12">
+                        <i class="material-icons prefix">invert_colors</i>
+                        <input id="farbe" name="farbe" type="color" value="#000000" list="colors" required>
+                        <datalist id="colors">
+                            <option>#ff0000</option>
+                            <option>#0000ff</option>
+                            <option>#00ff00</option>
+                            <option>#ffff00</option>
+                            <option>#00ffff</option>
+                        </datalist>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
     <div class="modal-footer">
-        <a id="btn_save" href="#" class="waves-effect waves-teal btn green">Speichern</a>
+        <button id="btn_save" type="submit" class="waves-effect waves-teal btn green">Speichern</button>
         <a href="#" class="modal-close waves-effect waves-grey btn-flat">Abbrechen</a>
     </div>
-</div>
+</form>
 </body>
 </html>

@@ -29,7 +29,7 @@ if(!empty($_REQUEST)) {
 <body>
 <div class="container">
     <div class="row">
-        <form class="col s12" method="post" id="form">
+        <form class="col s12" id="form">
             <div class="row">
                 <div class="input-field col s6">
                     <input placeholder="Placeholder" name="first_name" id="first_name" type="text" class="validate">
@@ -125,10 +125,11 @@ if(!empty($_REQUEST)) {
             </div>
             <div class="row">
                 <div class="col s12">
-                    <button class="btn" type="submit">Absenden</button>
+                    <button class="btn" type="submit">Speichern</button>
                 </div>
             </div>
         </form>
+        <div id="log"></div>
     </div>
 </div>
 </body>

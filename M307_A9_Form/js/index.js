@@ -17,9 +17,10 @@ function setContents() {
 
     $('#first_name').val('Yannick');
     $('#last_name').val('Hilber');
-    $('#password').val('100%fake');
+    $('#password').val('100%fakeasdffdsa');
     $('#email').val('hilber.yannick@gmail.com');
     $('#first_name_icon').val('Yannick :)');
+    $('#userid').val('007');
 
     $('#checkbox1').prop('checked', true);
 
@@ -52,13 +53,38 @@ function initValidator() {
         }
     });
 
-    $('#form').submit(function(e) {
+    $('#form').submit(function (e) {
+        e.preventDefault();
         if (!format.test($('#password').val()) || $('#password').val().length < 10) {
             $('#password').addClass('invalid');
             $('#password').removeClass('valid');
-            $('#password')[0].setCustomValidity("Mindestens ein Sonderzeichen erforderlich.");
+            $('#password')[0].setCustomValidity("10 Zeichen und mindestens ein Sonderzeichen erforderlich.");
             $('#password')[0].reportValidity();
+            return false;
         }
-        e.preventDefault();
+
+        readValues();
     });
+}
+
+function readValues() {
+    // Werte holen und umformen
+    var values = $('#form').serializeArray();
+    var data = {};
+    for (var i = 0; el = values[i]; i++) {
+        data[el.name] = el.value;
+    }
+
+    // Checkboxen konvertieren
+    $('input[type="checkbox"]', '#form').each(function () {
+        if ($(this).is(':checked')) {
+            data[this.name] = true;
+        } else {
+            data[this.name] = false;
+        }
+    });
+
+    // Datum konvertieren
+    data['date'] = M.Datepicker.getInstance($('#date')).date.toISOString();
+    console.log(data);
 }
