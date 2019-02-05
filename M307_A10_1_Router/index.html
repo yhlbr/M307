@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Index</title>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+<div class="container">
+    <button id="get_data" class="btn teal">Aktualisieren</button>
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal_add">Person hinzufügen</a>
+    <table>
+        <thead>
+        <td>Name</td>
+        <td>Alter</td>
+        </thead>
+        <tbody id="tbody">
+        <tr id="tpl">
+            <td>{{name}}</td>
+            <td>{{alter}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Modal Structure -->
+    <div id="modal_add" class="modal">
+        <div class="modal-content">
+            <h4>Personalien</h4>
+            <div class="row">
+                <div class="col s12">
+                    <input type="text" id="name" id="name">
+                    <label for="name">Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <input type="number" id="alter" id="alter">
+                    <label for="alter">Alter</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" id="btn_add" class="waves-effect waves-teal green btn-flat white-text">Hinzufügen</a>
+            <a href="#" class="modal-close waves-effect waves-green btn-flat">Schliessen</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

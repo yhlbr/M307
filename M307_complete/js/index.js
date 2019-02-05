@@ -6,33 +6,23 @@ $(function () {
 
     $('#modal_add').submit(function (e) {
         e.preventDefault();
-        var values = getFormValues($(this));
-        console.log(values);
+        var valid = true;
+        if (!$('#kraftstoff').val()) {
+            $('#kraftstoff_error').text("Bitte Kraftstoff angeben.");
+            valid = false;
+        } else {
+            $('#kraftstoff_error').text("");
+        }
 
+        if (!$('#bauart').val()) {
+            $('#bauart_error').text("Bitte Bauart angeben.");
+            valid = false;
+        } else {
+            $('#bauart_error').text("");
+        }
+        if(!valid) return;
+
+        var values = $(this).serializeArray();
+        console.log(values, 'Speichern');
     });
 });
-
-function getFormValues(subject) {
-    // Werte holen und umformen
-    var values = $(subject).serializeArray();
-    var data = {};
-    for (var i = 0; el = values[i]; i++) {
-        data[el.name] = el.value;
-    }
-
-    // Checkboxen konvertieren
-    $('input[type="checkbox"]', subject).each(function () {
-        if ($(this).is(':checked')) {
-            data[this.name] = true;
-        } else {
-            data[this.name] = false;
-        }
-    });
-
-    // Datum konvertieren
-    $('.datepicker', subject).each(function() {
-        data[this.name] = M.Datepicker.getInstance($(this)).date.toISOString();
-    });
-
-    return data;
-}
