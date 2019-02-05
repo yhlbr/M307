@@ -1,14 +1,9 @@
 (function ($) {
     $(function () {
-        console.log('Start der Webseite:');
         $.ajax({
             url: 'cars.json',
             dataType: 'json',
             success: function (json_autos) {
-                // Einzelnes Auto ausgeben -> mit F12 die Console anschauen
-                console.log(json_autos[0]);
-                // nur die ID des Autos ausgeben
-                console.log(json_autos[0].id);
 
                 // Design mit id = autos_liste_template in eine Variable laden
                 $('#autos_liste_template').show();
@@ -35,15 +30,20 @@
                     var html = Mustache.to_html(html_for_mustache, json_autos[i]);
                     $('#autos_liste_anzeige').append(html);
                 }
+
+                $('.btn_fill').click(function () {
+                    var id = $(this).parents('tr').data('id');
+                    M.toast({html: 'Auto betanken mit der id: ' + id + '!', classes: 'teal darken-3'});
+                });
+                $('.btn_edit').click(function () {
+                    var id = $(this).parents('tr').data('id');
+                    M.toast({html: 'Auto bearbeiten mit der id: ' + id + '!', classes: 'teal darken-3'});
+                });
+                $('.btn_delete').click(function () {
+                    var id = $(this).parents('tr').data('id');
+                    M.toast({html: 'Auto löschen mit der id: ' + id + '!', classes: 'teal darken-3'});
+                });
             }
         });
     }); // End Document Ready
 })(jQuery); // End of jQuery name space
-
-// --------------------
-// Auto tanken
-// --------------------
-function auto_betanken(id) {
-    console.log('auto wird betankt');
-    Materialize.toast('auto_betanken mit der id: ' + id + '!', 5000, 'teal darken-3');
-}

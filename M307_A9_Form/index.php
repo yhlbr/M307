@@ -1,6 +1,8 @@
 <?php
 if(!empty($_REQUEST)) {
+    echo "<pre>";
     var_dump($_REQUEST);
+    echo "</pre>";
 }
 ?>
 <!DOCTYPE html>
@@ -27,7 +29,7 @@ if(!empty($_REQUEST)) {
 <body>
 <div class="container">
     <div class="row">
-        <form class="col s12" method="post">
+        <form class="col s12" method="post" id="form">
             <div class="row">
                 <div class="input-field col s6">
                     <input placeholder="Placeholder" name="first_name" id="first_name" type="text" class="validate">
@@ -40,9 +42,9 @@ if(!empty($_REQUEST)) {
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input name="password" id="password" type="password" class="validate" minlength="6">
+                    <input name="password" id="password" type="password" class="validate" minlength="10">
                     <label for="password">Password</label>
-                    <span class="helper-text">Mindestens 6 Zeichen</span>
+                    <span class="helper-text">Mindestens 10 Zeichen und ein Sonderzeichen</span>
                 </div>
             </div>
             <div class="row">
@@ -52,7 +54,7 @@ if(!empty($_REQUEST)) {
                 </div>
                 <div class="input-field col s6">
                     <i class="material-icons prefix">account_circle</i>
-                    <input name="first_name_icon" id="icon_prefix" type="text" class="validate">
+                    <input name="first_name_icon" id="first_name_icon" id="icon_prefix" type="text" class="validate">
                     <label for="icon_prefix">First Name</label>
                 </div>
             </div>
@@ -60,44 +62,50 @@ if(!empty($_REQUEST)) {
                 <div class="col s6">
                     <p>
                         <label>
-                            <input type="checkbox" name="checkbox"/>
-                            <span>Checkbox</span>
+                            <input type="checkbox" name="checkbox1" id="checkbox1"/>
+                            <span>Checkbox 1</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="checkbox2" id="checkbox2"/>
+                            <span>Checkbox 2</span>
                         </label>
                     </p>
                 </div>
                 <div class="col s6">
-                    <input type="text" name="date" class="datepicker">
+                    <input type="text" name="date" class="datepicker" id="date">
                 </div>
             </div>
             <div class="row">
                 <div class="col s6">
                     <p>
                         <label>
-                            <input name="radio" type="radio" value="red" checked/>
+                            <input name="radio" type="radio" value="red" id="radio_red" checked/>
                             <span>Red</span>
                         </label>
                     </p>
                     <p>
                         <label>
-                            <input name="radio" value="yellow" type="radio"/>
+                            <input name="radio" value="yellow" type="radio" id="radio_yellow"/>
                             <span>Yellow</span>
                         </label>
                     </p>
                     <p>
                         <label>
-                            <input name="radio" value="green" type="radio"/>
+                            <input name="radio" value="green" type="radio" id="radio_green"/>
                             <span>Green</span>
                         </label>
                     </p>
                     <p>
                         <label>
-                            <input name="radio" type="radio" value="brown" disabled="disabled"/>
+                            <input name="radio" type="radio" value="brown" disabled="disabled" id="radio_brown"/>
                             <span>Brown</span>
                         </label>
                     </p>
                 </div>
                 <div class="input-field col s6">
-                    <select name="select">
+                    <select name="select" id="select">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -108,7 +116,11 @@ if(!empty($_REQUEST)) {
             </div>
             <div class="row">
                 <div class="col s6">
-                    <input type="text" class="timepicker">
+                    <input type="text" class="timepicker" name="timepicker" id="timepicker">
+                </div>
+                <div class="input-field col s6">
+                    <input name="userid" id="userid" type="number" class="validate">
+                    <label for="userid">Benutzer-ID</label>
                 </div>
             </div>
             <div class="row">

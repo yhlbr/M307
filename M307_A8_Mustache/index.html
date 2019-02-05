@@ -35,17 +35,17 @@
         </tr>
         </thead>
         <tbody id="autos_liste_anzeige">
-        <tr id="autos_liste_template">
-            <td id="autos_id">{{id}}</td>
+        <tr id="autos_liste_template" data-id="{{id}}">
+            <td>{{id}}</td>
             <td id="autos_name"><i class="material-icons">directions_car</i> {{name}}</td>
-            <td id="autos_kraftstoff">{{kraftstoff}}</td>
-            <td id="autos_farbe">{{farbe}}</td>
-            <td id="autos_bauart">{{bauart}}</td>
-            <td id="autos_tank">{{betankungen}}</td>
+            <td>{{kraftstoff}}</td>
+            <td>{{farbe}}</td>
+            <td>{{bauart}}</td>
+            <td>{{betankungen}}</td>
             <td>
-                <i class="clickable material-icons green-text" onclick="fill_car({{id}})">directions_car</i>
-                <i class="clickable material-icons blue-text" onclick="edit_car({{id}})">edit</i>
-                <i class="clickable material-icons red-text" onclick="delete_car({{id}})">delete</i>
+                <i class="clickable material-icons green-text btn_fill">directions_car</i>
+                <i class="clickable material-icons blue-text btn_edit">edit</i>
+                <i class="clickable material-icons red-text btn_delete">delete</i>
             </td>
         </tr>
         </tbody>
