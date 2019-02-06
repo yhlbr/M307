@@ -2,7 +2,7 @@
 define('MYSQL_HOST', "localhost");
 define('MYSQL_USER', "root");
 define('MYSQL_PW', "");
-define('MYSQL_DB', "yannickh");
+define('MYSQL_DB', "yannickh_noten");
 
 // Verbindung zur DB herstellen
 $con = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PW);
@@ -36,7 +36,7 @@ if (isset($_GET['id']) && !is_numeric($_GET['id'])) {
 // ----------------------------------
 switch ($switch) {
     case 'get':
-        $data = getData('SELECT * FROM autos', $error);
+        $data = getData('SELECT * FROM noten', $error);
         if ($data === false) {
             sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.', $error);
         } else {
@@ -44,15 +44,27 @@ switch ($switch) {
         }
         break;
     case 'getByID':
-        $data = getData('SELECT * FROM autos WHERE id = ' . $_GET['id'], $error)[0];
+        $data = getData('SELECT * FROM noten WHERE id = ' . $_GET['id'], $error)[0];
         if ($data === false) {
             sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.', $error);
         } else {
             sendResponse(true, $data);
         }
         break;
+    case 'getAVG':
+        $stmt = $con->prepare('SELECT AVG(note) as avg FROM noten WHERE fach = ? GROUP BY fach');
+        $stmt->bind_param('s', $_GET['fach']);
+        $stmt->execute();
+        $res = $stmt->get_result();
+        $row = $res->fetch_assoc();
+        if (!$res) {
+            sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.');
+        } else {
+            sendResponse(true, ['avg' => round($row['avg'], 2)]);
+        }
+        break;
     case 'delete':
-        $result = $con->query('DELETE FROM autos WHERE id = ' . $_GET['id']);
+        $result = $con->query('DELETE FROM noten WHERE id = ' . $_GET['id']);
         if (!$result) {
             sendResponse(false, [], 'Eintrag konnte nicht gelöscht werden.', $con->error);
         } else {
@@ -64,15 +76,14 @@ switch ($switch) {
         if (validateData($data) !== true) {
             sendResponse(false, [], validateData($data));
         } else {
-            $stmt = $con->prepare("UPDATE autos
-            SET autoname = ?, kraftstoff = ?, bauart = ?, farbe = ?
+            $stmt = $con->prepare("UPDATE noten
+            SET fach = ?, note = ?, datum = ?
             WHERE id = " . $_GET['id']);
             $stmt->bind_param(
-                'ssss',
-                $data['autoname'],
-                $data['kraftstoff'],
-                $data['bauart'],
-                $data['farbe']
+                'sss',
+                $data['fach'],
+                $data['note'],
+                $data['datum']
             );
             $res = $stmt->execute();
             if (!$res) {
@@ -87,13 +98,12 @@ switch ($switch) {
         if (validateData($data) !== true) {
             sendResponse(false, [], validateData($data));
         } else {
-            $stmt = $con->prepare('INSERT INTO autos(autoname, kraftstoff, farbe, bauart) VALUES(?,? ,? ,?)');
+            $stmt = $con->prepare('INSERT INTO noten(fach, note, datum) VALUES (?, ?, ?)');
             $stmt->bind_param(
-                'ssss',
-                $data['autoname'],
-                $data['kraftstoff'],
-                $data['farbe'],
-                $data['bauart']
+                'sss',
+                $data['fach'],
+                $data['note'],
+                $data['datum']
             );
             $res = $stmt->execute();
             if (!$res) {
@@ -106,7 +116,7 @@ switch ($switch) {
     case "tanken":
         $result = $con->query('UPDATE autos SET betankungen = betankungen + 1 WHERE id = ' . $_GET['id']);
         if (!$result) {
-            sendResponse(false, [], 'Auto konnte nicht betankt werden.', $con->error);
+            sendResponse(false, [], 'Note konnte nicht betankt werden.', $con->error);
         } else {
             sendResponse(true);
         }
@@ -125,21 +135,17 @@ function sendResponse($success, $data = [], $error = "", $debug_msg = "")
 
 function validateData($data)
 {
-    if (empty($data['autoname'])) {
-        return 'Auto-Name ist nicht ausgefüllt.';
+    if (empty($data['fach'])) {
+        return 'Fach ist nicht ausgefüllt.';
     }
-    if (empty($data['kraftstoff'])) {
-        return 'Kraftstoff ist nicht ausgefüllt.';
+    if (empty($data['note'])) {
+        return 'Note ist nicht ausgefüllt.';
     }
-    if (empty($data['bauart'])) {
-        return 'Bauart ist nicht ausgefüllt.';
+    if (empty($data['datum'])) {
+        return 'Datum ist nicht ausgefüllt.';
     }
-    if (empty($data['farbe'])) {
-        return 'Farbe ist nicht ausgefüllt.';
-    }
-
-    if (!preg_match('/^#[a-f0-9]{6}$/i', $data['farbe'])) {
-        return "Farbe ist nicht gültig.";
+    if (!preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/", $data['datum'])) {
+        return "Datum ist nicht korrekt formatiert.";
     }
 
     return true;
@@ -170,24 +176,21 @@ function createDB()
     if (!$con->select_db(MYSQL_DB)) return false;
 
     // Tabelle erstellen
-    $sql = 'CREATE TABLE IF NOT EXISTS autos (
+    $sql = 'CREATE TABLE IF NOT EXISTS noten (
     id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    autoname TEXT,
-    kraftstoff TEXT,
-    farbe TEXT,
-    bauart TEXT,
-    betankungen INTEGER NOT NULL DEFAULT 0)';
+    fach TEXT,
+    note FLOAT,
+    datum DATE)';
     $res_table = $con->query($sql);
     if (!$res_table) {
         return false;
     }
 
     // Auto einfuegen
-    $sql = "INSERT INTO autos (autoname, kraftstoff, farbe, bauart, betankungen) VALUES
-    ('Mercedes Benz', 'Benzin', '#000000', 'Sportwagen', 5),
-    ('BMW', 'Diesel', '#0000ff', 'Cabrio', 1),
-    ('Lamborghini', 'Benzin', '#ff0000', 'Sportwagen', 7),
-    ('Hummer', 'Ethanol', '#ffffff', 'Limousine', 3)";
+    $sql = "INSERT INTO noten (fach, note, datum) VALUES
+    ('Mathe', 5.5, '2018-06-27'),
+    ('Geschichte', 4.3, '2018-03-13'),
+    ('Mathe', 4.5, '2018-08-13')";
     $res_insert = $con->query($sql);
     if (!$res_insert) {
         return false;
