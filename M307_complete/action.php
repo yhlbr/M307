@@ -36,7 +36,7 @@ if (isset($_GET['id']) && !is_numeric($_GET['id'])) {
 // ----------------------------------
 switch ($switch) {
     case 'get':
-        $data = getData('SELECT *,asdf FROM autos', $error);
+        $data = getData('SELECT * FROM autos', $error);
         if ($data === false) {
             sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.', $error);
         } else {

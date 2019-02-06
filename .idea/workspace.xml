@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb594cc4-c9f1-4019-99bd-3e74467915d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M307_DB/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M307_complete/action.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M307_complete/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M307_complete/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_complete/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_complete/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/img/bg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/M307_complete/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/M307_complete/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/js/index.js" afterDir="false" />
     </list>
@@ -54,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M307_complete/action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+            <state relative-caret-position="456">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -63,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/M307_complete/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="79" column="81" lean-forward="true" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
+            <state relative-caret-position="498">
+              <caret line="133" column="47" lean-forward="true" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -72,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="133" column="39" lean-forward="true" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+            <state relative-caret-position="364">
+              <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -99,6 +94,8 @@
       <find>Auto gespeichert</find>
       <find>'get':</find>
       <find>Fehler:</find>
+      <find>asdf</find>
+      <find>parallax</find>
     </findStrings>
     <replaceStrings>
       <replace>lang=&quot;de&quot;</replace>
@@ -148,8 +145,8 @@
         <option value="$PROJECT_DIR$/M307_complete/setup.php" />
         <option value="$PROJECT_DIR$/M307_complete/css/index.css" />
         <option value="$PROJECT_DIR$/M307_A8_Mustache/index.html" />
-        <option value="$PROJECT_DIR$/M307_complete/index.html" />
         <option value="$PROJECT_DIR$/M307_complete/action.php" />
+        <option value="$PROJECT_DIR$/M307_complete/index.html" />
         <option value="$PROJECT_DIR$/M307_complete/js/index.js" />
       </list>
     </option>
@@ -253,12 +250,12 @@
       <workItem from="1549268385199" duration="28000" />
       <workItem from="1549282640690" duration="10495000" />
       <workItem from="1549351885309" duration="23298000" />
-      <workItem from="1549438403752" duration="9807000" />
+      <workItem from="1549438403752" duration="12068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44239000" />
+    <option name="totallyTimeSpent" value="46500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -545,24 +542,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
+    <entry file="file://$PROJECT_DIR$/M307_complete/action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="133" column="39" lean-forward="true" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+        <state relative-caret-position="456">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_complete/action.php">
+    <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+        <state relative-caret-position="364">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/M307_complete/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="79" column="81" lean-forward="true" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
+        <state relative-caret-position="498">
+          <caret line="133" column="47" lean-forward="true" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
         </state>
       </provider>
     </entry>

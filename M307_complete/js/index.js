@@ -104,6 +104,7 @@ function init_list() {
 
 function load_table() {
     var $anzeige = $('#autos_liste_anzeige');
+    var scroll_pos = $(window).scrollTop();
 
     $anzeige.html('');
     $.ajax({
@@ -129,6 +130,9 @@ function load_table() {
                 // An Tabelle anhängen
                 $anzeige.append(html);
             }
+
+            // Scroll-Position wiederherstellen
+            $(window).scrollTop(scroll_pos);
 
             $('.btn_fill', $anzeige).click(function () {
                 var id = $(this).parents('tr').data('id');
