@@ -16,6 +16,12 @@ $(function () {
     });
 
     init_modal();
+    $('.datepicker', $('#modal')).focus(function () {
+        var picker = M.Datepicker.getInstance(this);
+        if (!picker.isOpen) {
+            picker.open();
+        }
+    });
 
     init_list();
 });
