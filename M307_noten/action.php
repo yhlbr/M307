@@ -65,6 +65,15 @@ switch ($switch) {
             ]);
         }
         break;
+    case 'allAVGs':
+        $res = $con->query('SELECT fach, ROUND(AVG(note), 2) as avg FROM noten GROUP BY fach');
+        $result = $res->fetch_all(MYSQLI_ASSOC);
+        if (!$res) {
+            sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.');
+        } else {
+            sendResponse(true, $result);
+        }
+        break;
     case 'delete':
         $result = $con->query('DELETE FROM noten WHERE id = ' . $_GET['id']);
         if (!$result) {

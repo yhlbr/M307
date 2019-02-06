@@ -1,4 +1,5 @@
 var tpl_list;
+var tpl_avg;
 
 $(function () {
     $('.datepicker').datepicker({
@@ -23,6 +24,7 @@ $(function () {
         }
     });
 
+    init_schnitte();
     init_list();
 });
 
@@ -213,4 +215,28 @@ function load_table() {
             });
         }
     });
+
+    show_schnitte();
+}
+
+function show_schnitte() {
+    $.ajax({
+        url: 'action.php?action=allAVGs',
+        dataType: 'json',
+        type: 'get',
+        success: function (response) {
+            $('#schnitt_liste_anzeige').empty();
+            for (var i in response.data) {
+                var new_panel = tpl_avg.clone();
+                var html_for_mustache = new_panel[0].outerHTML;
+                var html = Mustache.to_html(html_for_mustache, response.data[i]);
+                $('#schnitt_liste_anzeige').append(html);
+            }
+        }
+    })
+}
+
+function init_schnitte() {
+    tpl_avg = $('#schnitt_liste_template').clone();
+    $('#schnitt_liste_template').remove();
 }
