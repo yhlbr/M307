@@ -9,3 +9,7 @@
 main table {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
 }
+
+.mt-10 {
+    margin-top: 10px;
+}

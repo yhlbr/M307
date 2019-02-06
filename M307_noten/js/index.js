@@ -101,7 +101,6 @@ function init_list() {
 
 function load_table() {
     var $anzeige = $('#noten_liste_anzeige');
-    var scroll_pos = $(window).scrollTop();
 
     $anzeige.html('');
     $.ajax({
@@ -128,9 +127,6 @@ function load_table() {
                 // An Tabelle anhängen
                 $anzeige.append(html);
             }
-
-            // Scroll-Position wiederherstellen
-            $(window).scrollTop(scroll_pos);
 
             $('.btn_avg', $anzeige).click(function () {
                 var name = $(this).parents('tr').find('.td_fach').text();
