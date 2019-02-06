@@ -1,5 +1,5 @@
 <?php
-if(!empty($_REQUEST)) {
+if (!empty($_REQUEST)) {
     echo "<pre>";
     var_dump($_REQUEST);
     echo "</pre>";
@@ -121,6 +121,13 @@ if(!empty($_REQUEST)) {
                 <div class="input-field col s6">
                     <input name="userid" id="userid" type="number" class="validate">
                     <label for="userid">Benutzer-ID</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <textarea name="area" id="area" class="materialize-textarea" cols="30"
+                              rows="10"></textarea>
+                    <label for="area">Kommentar</label>
                 </div>
             </div>
             <div class="row">

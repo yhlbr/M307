@@ -21,6 +21,7 @@ function setContents() {
     $('#email').val('hilber.yannick@gmail.com');
     $('#first_name_icon').val('Yannick :)');
     $('#userid').val('007');
+    $('#area').val('Lorem ipsum dolor sit amet, consectetur adipisicing elit. ');
 
     $('#checkbox1').prop('checked', true);
 
