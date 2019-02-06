@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb594cc4-c9f1-4019-99bd-3e74467915d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/M307_noten/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_noten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="80" column="56" lean-forward="true" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+            <state relative-caret-position="299">
+              <caret line="140" column="93" selection-start-line="140" selection-start-column="93" selection-end-line="140" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -81,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
+            <state relative-caret-position="720">
+              <caret line="154" column="46" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -124,6 +125,8 @@
       <find>#datum</find>
       <find>fetch_</find>
       <find>validate</find>
+      <find>round</find>
+      <find>type=&quot;number</find>
     </findStrings>
     <replaceStrings>
       <replace>lang=&quot;de&quot;</replace>
@@ -281,12 +284,12 @@
       <workItem from="1549268385199" duration="28000" />
       <workItem from="1549282640690" duration="10495000" />
       <workItem from="1549351885309" duration="23298000" />
-      <workItem from="1549438403752" duration="19089000" />
+      <workItem from="1549438403752" duration="19558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53521000" />
+    <option name="totallyTimeSpent" value="53990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -306,7 +309,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -594,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="80" column="56" lean-forward="true" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -608,10 +604,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="140" column="93" selection-start-line="140" selection-start-column="93" selection-end-line="140" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
+        <state relative-caret-position="720">
+          <caret line="154" column="46" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="46" />
         </state>
       </provider>
     </entry>
