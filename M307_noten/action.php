@@ -147,6 +147,9 @@ function validateData($data)
     if (!preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/", $data['datum'])) {
         return "Datum ist nicht korrekt formatiert.";
     }
+    if(!is_float($data['note']) && !is_numeric($data['note'])) {
+        return "Note ist keine Kommazahl";
+    }
 
     return true;
 }
