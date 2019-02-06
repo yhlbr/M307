@@ -138,6 +138,11 @@ function validateData($data)
         return 'Farbe ist nicht ausgefüllt.';
     }
 
+    if(!preg_match('/^#[a-f0-9]{6}$/i', $data['farbe']))
+    {
+        return "Farbe ist nicht gültig.";
+    }
+
     return true;
 }
 
