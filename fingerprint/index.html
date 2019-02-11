@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Fingerprint</title>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6">
+            <button class="btn waves-effect waves-light" type="button" id="login">Login</button>
+        </div>
+        <div class="col s12 m6">
+            <a id="btn_add" class="waves-effect waves-light green btn modal-trigger" href="#modal_acc">
+                <i class="material-icons left">add</i> Account hinzufügen
+            </a>
+            <a id="btn_add_print" class="waves-effect waves-light green btn modal-trigger" href="#modal_print">
+                <i class="material-icons left">add</i> Fingerabdruck hinzufügen
+            </a>
+        </div>
+    </div>
+</div>
+
+<form id="modal_acc" class="modal">
+    <div class="modal-content">
+        <h4>Account</h4>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <i class="material-icons prefix">assignment</i>
+                <input id="vorname" name="vorname" type="text" class="validate" required>
+                <label for="vorname">Vorname</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <i class="material-icons prefix">assignment</i>
+                <input id="nachname" name="nachname" type="text" class="validate" required>
+                <label for="nachname">Nachname</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">assignment</i>
+                <input type="email" id="email" name="email" class="validate" required>
+                <label for="email">E-Mail</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="btn_save" type="submit" class="waves-effect waves-teal btn green">Speichern</button>
+        <a href="#" class="modal-close waves-effect waves-red btn-flat">Abbrechen</a>
+    </div>
+</form>
+<form id="modal_print" class="modal">
+    <div class="modal-content">
+        <h4>Fingerabdruck hinzufügen</h4>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <i class="material-icons prefix">assignment</i>
+                <select id="sel_acc">
+                    <option value="" disabled selected>Account auswählen</option>
+                </select>
+                <label for="sel_acc">Account</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="btn_save_print" type="submit" class="waves-effect waves-teal btn green">Hinzufügen</button>
+        <a href="#" class="modal-close waves-effect waves-red btn-flat">Abbrechen</a>
+    </div>
+</form>
+</body>
+</html>
