@@ -120,13 +120,13 @@ function register_fingerprint(account) {
     navigator.credentials.create(createCredentialDefaultArgs)
         .then(function (cred) {
             console.log("NEW CREDENTIAL", cred);
-            alert(new TextDecoder().decode(cred.rawId));
+            alert(btoa(cred.rawId));
             $.ajax({
                 url: 'action.php?action=add_fingerprint',
                 type: 'POST',
                 data: {
                     id: account.id,
-                    fingerprint: new TextDecoder().decode(cred.rawId)
+                    fingerprint: btoa(cred.rawId)
                 },
                 dataType: 'json',
                 success: function(response) {
