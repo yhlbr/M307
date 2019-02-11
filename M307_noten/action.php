@@ -172,6 +172,12 @@ function validateData($data)
         return "Note ist nicht gültig";
     }
 
+    foreach ($data as $input) {
+        if (strlen($input) > 255) {
+            return ucfirst($input) . " ist zu lange.";
+        }
+    }
+
     return true;
 }
 
