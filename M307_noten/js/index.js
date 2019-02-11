@@ -248,7 +248,7 @@ function init_total_avg_btns() {
             success: function (response) {
                 if (response.success && response.data.avg) {
                     M.toast({html: 'Gesamtschnitt: ' + response.data.avg});
-                } else if(!response.data.avg) {
+                } else if (!response.data.avg) {
                     M.toast({html: 'Gesamtschnitt nicht verfügbar'});
                 }
             }
@@ -262,7 +262,7 @@ function init_total_avg_btns() {
             success: function (response) {
                 if (response.success && response.data.avg) {
                     M.toast({html: 'Gerundeter Gesamtschnitt: ' + response.data.avg});
-                } else if(!response.data.avg) {
+                } else if (!response.data.avg) {
                     M.toast({html: 'Gerundeter Gesamtschnitt nicht verfügbar'});
                 }
             }
