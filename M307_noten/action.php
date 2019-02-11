@@ -211,7 +211,7 @@ function createDB()
         return false;
     }
 
-    // Auto einfuegen
+    // einfuegen
     $sql = "INSERT INTO noten (fach, note, datum) VALUES
     ('Mathe', 5.5, '2018-06-27'),
     ('Geschichte', 4.3, '2018-03-13'),

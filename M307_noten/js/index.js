@@ -211,10 +211,9 @@ function load_table() {
                     }
                 });
             });
+            show_schnitte();
         }
     });
-
-    show_schnitte();
 }
 
 function show_schnitte() {

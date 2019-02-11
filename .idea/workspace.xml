@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb594cc4-c9f1-4019-99bd-3e74467915d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fingerprint/action.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fingerprint/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fingerprint/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fingerprint/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_noten/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_noten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_noten/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/js/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,43 +49,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fingerprint/index.html">
+        <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="72" column="35" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fingerprint/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
-              <folding>
-                <element signature="n#!!block;n#init_modal_acc#0" />
-                <element signature="e#914#922#0" />
-                <element signature="n#!!block;n#test#0" />
-              </folding>
+            <state relative-caret-position="416">
+              <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fingerprint/action.php">
+        <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+            <state relative-caret-position="4706">
+              <caret line="217" column="34" lean-forward="true" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
-                <element signature="e#968#1234#0#PHP" />
-                <element signature="e#0#22#2" />
-                <element signature="e#1044#1219#0#PHP" />
-                <element signature="e#1164#1219#0#PHP" />
-                <element signature="e#1543#1824#0#PHP" />
-                <element signature="e#0#46#1" />
-                <element signature="e#1644#1809#0#PHP" />
-                <element signature="e#1761#1809#0#PHP" />
-                <element signature="e#47#62#0" />
+                <element signature="e#76#139#0" />
+                <element signature="e#298#374#0" />
+                <element signature="e#448#575#0" />
+                <element signature="e#531#569#0" />
+                <element signature="n#!!block;n#clear_modal#0" />
+                <element signature="n#!!block;n#init_modal#0" />
               </folding>
             </state>
           </provider>
@@ -105,8 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Auto gespeichert</find>
-      <find>'get':</find>
       <find>Fehler:</find>
       <find>asdf</find>
       <find>parallax</find>
@@ -135,6 +124,8 @@
       <find>btn_add</find>
       <find>MYSQL</find>
       <find>close()</find>
+      <find>INSERT</find>
+      <find>show_schnitte</find>
     </findStrings>
     <replaceStrings>
       <replace>lang=&quot;de&quot;</replace>
@@ -184,19 +175,19 @@
         <option value="$PROJECT_DIR$/M307_complete/css/index.css" />
         <option value="$PROJECT_DIR$/M307_noten/css/index.css" />
         <option value="$PROJECT_DIR$/M307_complete/js/index.js" />
-        <option value="$PROJECT_DIR$/M307_noten/index.html" />
         <option value="$PROJECT_DIR$/M307_Validation/index.php" />
         <option value="$PROJECT_DIR$/M307_Validation/index.html" />
         <option value="$PROJECT_DIR$/M307_Validation/js/index.js" />
         <option value="$PROJECT_DIR$/M307_Validation/action.php" />
         <option value="$PROJECT_DIR$/M307_noten/config.inc.php" />
-        <option value="$PROJECT_DIR$/M307_noten/action.php" />
-        <option value="$PROJECT_DIR$/M307_noten/js/index.js" />
         <option value="$PROJECT_DIR$/M307_complete/index.html" />
         <option value="$PROJECT_DIR$/fingerprint/css/index.css" />
         <option value="$PROJECT_DIR$/fingerprint/index.html" />
         <option value="$PROJECT_DIR$/fingerprint/action.php" />
         <option value="$PROJECT_DIR$/fingerprint/js/index.js" />
+        <option value="$PROJECT_DIR$/M307_noten/index.html" />
+        <option value="$PROJECT_DIR$/M307_noten/action.php" />
+        <option value="$PROJECT_DIR$/M307_noten/js/index.js" />
       </list>
     </option>
   </component>
@@ -230,23 +221,13 @@
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="fingerprint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="M307_noten" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
               <item name="M307_noten" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,12 +280,12 @@
       <workItem from="1549282640690" duration="10495000" />
       <workItem from="1549351885309" duration="23298000" />
       <workItem from="1549438403752" duration="23762000" />
-      <workItem from="1549870380244" duration="15574000" />
+      <workItem from="1549870380244" duration="16274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73768000" />
+    <option name="totallyTimeSpent" value="74468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -574,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/M307_A9_Form/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -626,25 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="255" column="7" lean-forward="true" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
-          <folding>
-            <element signature="e#76#139#0" />
-            <element signature="e#298#374#0" />
-            <element signature="e#448#575#0" />
-            <element signature="e#531#569#0" />
-            <element signature="n#!!block;n#clear_modal#0" />
-            <element signature="n#!!block;n#init_modal#0" />
-            <element signature="n#!!block;n#init_list#0" />
-            <element signature="n#!!block;n#load_table#0" />
-            <element signature="n#!!block;n#show_schnitte#0" />
-            <element signature="n#!!block;n#init_schnitte#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/M307Tpl/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -673,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -716,6 +664,35 @@
             <element signature="n#!!block;n#init_modal_acc#0" />
             <element signature="e#914#922#0" />
             <element signature="n#!!block;n#test#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4706">
+          <caret line="217" column="34" lean-forward="true" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#76#139#0" />
+            <element signature="e#298#374#0" />
+            <element signature="e#448#575#0" />
+            <element signature="e#531#569#0" />
+            <element signature="n#!!block;n#clear_modal#0" />
+            <element signature="n#!!block;n#init_modal#0" />
           </folding>
         </state>
       </provider>
