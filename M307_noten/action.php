@@ -74,6 +74,24 @@ switch ($switch) {
             sendResponse(true, $result);
         }
         break;
+    case 'totalAVG':
+        $res = $con->query('SELECT ROUND(AVG(note), 2) AS avg FROM noten');
+        $result = $res->fetch_all(MYSQLI_ASSOC);
+        if (!$res) {
+            sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.');
+        } else {
+            sendResponse(true, $result[0]);
+        }
+        break;
+    case 'totalAVGRounded':
+        $res = $con->query('SELECT ROUND(AVG(f.fach_avg), 2) AS avg FROM (SELECT ROUND(AVG(note), 2) as fach_avg FROM noten GROUP BY fach) AS f');
+        $result = $res->fetch_all(MYSQLI_ASSOC);
+        if (!$res) {
+            sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.');
+        } else {
+            sendResponse(true, $result[0]);
+        }
+        break;
     case 'delete':
         $result = $con->query('DELETE FROM noten WHERE id = ' . $_GET['id']);
         if (!$result) {
@@ -122,14 +140,6 @@ switch ($switch) {
             } else {
                 sendResponse(true);
             }
-        }
-        break;
-    case "tanken":
-        $result = $con->query('UPDATE autos SET betankungen = betankungen + 1 WHERE id = ' . $_GET['id']);
-        if (!$result) {
-            sendResponse(false, [], 'Note konnte nicht betankt werden.', $con->error);
-        } else {
-            sendResponse(true);
         }
         break;
 }

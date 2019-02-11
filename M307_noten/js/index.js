@@ -26,6 +26,8 @@ $(function () {
 
     init_schnitte();
     init_list();
+
+    init_total_avg_btns();
 });
 
 function clear_modal() {
@@ -235,4 +237,31 @@ function show_schnitte() {
 function init_schnitte() {
     tpl_avg = $('#schnitt_liste_template').clone();
     $('#schnitt_liste_template').remove();
+}
+
+function init_total_avg_btns() {
+    $('#btn_total_avg').click(function () {
+        $.ajax({
+            url: 'action.php?action=totalAVG',
+            type: 'get',
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    M.toast({html: 'Gesamtschnitt: ' + response.data.avg});
+                }
+            }
+        });
+    });
+    $('#btn_total_avg_rounded').click(function () {
+        $.ajax({
+            url: 'action.php?action=totalAVGRounded',
+            type: 'get',
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    M.toast({html: 'Gerundeter Gesamtschnitt: ' + response.data.avg});
+                }
+            }
+        });
+    });
 }

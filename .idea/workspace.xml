@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/M307_noten/action.php" line="86" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bb594cc4-c9f1-4019-99bd-3e74467915d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M307_complete/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M307_complete/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M307_noten/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_noten/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/action.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/M307_noten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/M307_noten/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/M307_noten/js/index.js" afterDir="false" />
     </list>
@@ -48,10 +49,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
+        <entry file="file://$PROJECT_DIR$/M307_noten/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="338">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+            <state relative-caret-position="442">
+              <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -68,26 +69,66 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+            <state relative-caret-position="628">
+              <caret line="256" column="51" selection-start-line="256" selection-start-column="36" selection-end-line="256" selection-end-column="51" />
+              <folding>
+                <element signature="e#76#139#0" />
+                <element signature="e#298#374#0" />
+                <element signature="e#448#575#0" />
+                <element signature="e#531#569#0" />
+                <element signature="n#!!block;n#clear_modal#0" />
+                <element signature="n#!!block;n#init_modal#0" />
+                <element signature="e#949#2400#0" />
+                <element signature="e#1513#1573#0" />
+                <element signature="e#1590#2392#0" />
+                <element signature="e#1772#2291#0" />
+                <element signature="e#1859#2046#0" />
+                <element signature="e#2052#2206#0" />
+                <element signature="e#2327#2382#0" />
+                <element signature="n#!!block;n#init_list#0" />
+                <element signature="n#!!block;n#load_table#0" />
+                <element signature="e#2842#7304#0" />
+                <element signature="e#2966#7298#0" />
+                <element signature="e#3066#3232#0" />
+                <element signature="e#3370#3837#0" />
+                <element signature="e#3893#4783#0" />
+                <element signature="e#3992#4767#0" />
+                <element signature="e#4180#4634#0" />
+                <element signature="e#4324#4538#0" />
+                <element signature="e#4678#4749#0" />
+                <element signature="e#4842#6290#0" />
+                <element signature="e#4926#6274#0" />
+                <element signature="e#5111#6256#0" />
+                <element signature="e#5255#5469#0" />
+                <element signature="e#6350#7286#0" />
+                <element signature="e#6470#6517#0" />
+                <element signature="e#6601#7270#0" />
+                <element signature="e#6785#7252#0" />
+                <element signature="e#6898#7076#0" />
+                <element signature="e#7082#7192#0" />
+                <element signature="n#!!block;n#show_schnitte#0" />
+                <element signature="e#7370#7874#0" />
+                <element signature="e#7498#7868#0" />
+                <element signature="e#7590#7858#0" />
+                <element signature="n#!!block;n#init_schnitte#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/M307_complete/js/index.js">
+        <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_noten/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="239">
+              <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+              <folding>
+                <element signature="e#968#1254#0#PHP" />
+                <element signature="e#1259#1558#0#PHP" />
+                <element signature="e#2062#2405#0#PHP" />
+                <element signature="e#2410#2691#0#PHP" />
+                <element signature="e#2696#3408#0#PHP" />
+                <element signature="e#3413#4081#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lang=&quot;en&quot;</find>
-      <find>radio</find>
       <find>error</find>
       <find>modal_add</find>
       <find>Auto gespeichert</find>
@@ -135,6 +174,8 @@
       <find>Mustache</find>
       <find>scroll</find>
       <find>scroll_pos</find>
+      <find>Note hinzu</find>
+      <find>btn_add</find>
     </findStrings>
     <replaceStrings>
       <replace>lang=&quot;de&quot;</replace>
@@ -185,12 +226,12 @@
         <option value="$PROJECT_DIR$/M307_complete/action.php" />
         <option value="$PROJECT_DIR$/M307_A9_Form/js/index.js" />
         <option value="$PROJECT_DIR$/M307_complete/css/index.css" />
-        <option value="$PROJECT_DIR$/M307_noten/action.php" />
         <option value="$PROJECT_DIR$/M307_complete/index.html" />
         <option value="$PROJECT_DIR$/M307_noten/css/index.css" />
+        <option value="$PROJECT_DIR$/M307_complete/js/index.js" />
         <option value="$PROJECT_DIR$/M307_noten/index.html" />
         <option value="$PROJECT_DIR$/M307_noten/js/index.js" />
-        <option value="$PROJECT_DIR$/M307_complete/js/index.js" />
+        <option value="$PROJECT_DIR$/M307_noten/action.php" />
       </list>
     </option>
   </component>
@@ -220,23 +261,6 @@
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
@@ -305,21 +329,21 @@
       <workItem from="1549268385199" duration="28000" />
       <workItem from="1549282640690" duration="10495000" />
       <workItem from="1549351885309" duration="23298000" />
-      <workItem from="1549438403752" duration="23378000" />
+      <workItem from="1549438403752" duration="23762000" />
+      <workItem from="1549870380244" duration="1032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57810000" />
+    <option name="totallyTimeSpent" value="59226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32998884" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -332,6 +356,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -569,13 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_complete/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_complete/setup.php" />
     <entry file="file://$PROJECT_DIR$/M307_complete/action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-177">
@@ -607,17 +626,17 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/253882fd-28a2-453d-8c7b-3f45291e4ec0/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M307_complete/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="134" column="24" lean-forward="true" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -630,22 +649,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/M307_noten/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        <state relative-caret-position="442">
+          <caret line="71" column="83" selection-start-line="71" selection-start-column="83" selection-end-line="71" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+        <state relative-caret-position="628">
+          <caret line="256" column="51" selection-start-line="256" selection-start-column="36" selection-end-line="256" selection-end-column="51" />
+          <folding>
+            <element signature="e#76#139#0" />
+            <element signature="e#298#374#0" />
+            <element signature="e#448#575#0" />
+            <element signature="e#531#569#0" />
+            <element signature="n#!!block;n#clear_modal#0" />
+            <element signature="n#!!block;n#init_modal#0" />
+            <element signature="e#949#2400#0" />
+            <element signature="e#1513#1573#0" />
+            <element signature="e#1590#2392#0" />
+            <element signature="e#1772#2291#0" />
+            <element signature="e#1859#2046#0" />
+            <element signature="e#2052#2206#0" />
+            <element signature="e#2327#2382#0" />
+            <element signature="n#!!block;n#init_list#0" />
+            <element signature="n#!!block;n#load_table#0" />
+            <element signature="e#2842#7304#0" />
+            <element signature="e#2966#7298#0" />
+            <element signature="e#3066#3232#0" />
+            <element signature="e#3370#3837#0" />
+            <element signature="e#3893#4783#0" />
+            <element signature="e#3992#4767#0" />
+            <element signature="e#4180#4634#0" />
+            <element signature="e#4324#4538#0" />
+            <element signature="e#4678#4749#0" />
+            <element signature="e#4842#6290#0" />
+            <element signature="e#4926#6274#0" />
+            <element signature="e#5111#6256#0" />
+            <element signature="e#5255#5469#0" />
+            <element signature="e#6350#7286#0" />
+            <element signature="e#6470#6517#0" />
+            <element signature="e#6601#7270#0" />
+            <element signature="e#6785#7252#0" />
+            <element signature="e#6898#7076#0" />
+            <element signature="e#7082#7192#0" />
+            <element signature="n#!!block;n#show_schnitte#0" />
+            <element signature="e#7370#7874#0" />
+            <element signature="e#7498#7868#0" />
+            <element signature="e#7590#7858#0" />
+            <element signature="n#!!block;n#init_schnitte#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_complete/js/index.js">
+    <entry file="file://$PROJECT_DIR$/M307_noten/action.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        <state relative-caret-position="239">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding>
+            <element signature="e#968#1254#0#PHP" />
+            <element signature="e#1259#1558#0#PHP" />
+            <element signature="e#2062#2405#0#PHP" />
+            <element signature="e#2410#2691#0#PHP" />
+            <element signature="e#2696#3408#0#PHP" />
+            <element signature="e#3413#4081#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
