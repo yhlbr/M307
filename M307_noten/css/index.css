@@ -13,3 +13,7 @@ main table {
 .mt-10 {
     margin-top: 10px;
 }
+
+.site-content {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 -10px 20px rgba(0, 0, 0, 0.5);
+}
