@@ -140,7 +140,7 @@ function load_table() {
             $('.btn_fill', $anzeige).click(function () {
                 var id = $(this).parents('tr').data('id');
                 $.ajax({
-                    url: 'action.php?action=tanken&id=+' + id,
+                    url: 'action.php?action=tanken&id=' + id,
                     type: 'GET',
                     dataType: 'json',
                     success: function (response) {
