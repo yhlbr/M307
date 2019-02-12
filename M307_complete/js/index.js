@@ -1,18 +1,22 @@
+// Vorlagezeile der Tabelle
 var tpl_list;
 
 $(function () {
+    // Felder initialisieren
     $('.parallax').parallax();
     $('#mobile-menu').sidenav();
     $('select').formSelect();
     $('.modal').modal();
 
+    // Hinzufügen Button
     $('#btn_add').click(function () {
         $('#modal').data('action', 'insert');
         clear_modal();
     });
 
+    // Modal vorbereiten
     init_modal();
-
+    // Tabelle vorbereiten
     init_list();
 });
 
@@ -60,6 +64,7 @@ function init_modal() {
 
         // Anfrage wählen (update oder insert)
         var suffix = '';
+        // Falls keine Aktion verfügbar, insert verwenden
         var action = ($modal.data('action') || 'insert');
         if (action === 'update') {
             suffix = '&id=' + $modal.data('id');
