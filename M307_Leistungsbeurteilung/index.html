@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Bestellungen</title>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <nav class="grey">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Bestellungen</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="section white">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a id="btn_add" class="waves-effect waves-light green btn modal-trigger" href="#modal">
+                        <i class="material-icons left">add</i> Bestellung hinzufügen
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <table class="striped responsive-table">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Artikel*</th>
+                            <th>Menge*</th>
+                            <th>Preis pro Stück*</th>
+                            <th>Kaufdatum</th>
+                            <th>Bemerkung</th>
+                        </tr>
+                        </thead>
+                        <tbody id="bestellungen_liste_anzeige">
+                        <tr id="bestellungen_liste_template" data-id="{{bestellung_id}}">
+                            <td>{{bestellung_id}}</td>
+                            <td>{{bestellung_artikel}}</td>
+                            <td>{{bestellung_menge}}</td>
+                            <td>{{bestellung_preis_pro_stueck}}</td>
+                            <td>{{bestellung_kaufdatum}}</td>
+                            <td>{{bestellung_bemerkung}}</td>
+                            <td>
+                                <i class="clickable material-icons blue-text btn_edit">edit</i>
+                                <i class="clickable material-icons red-text btn_delete">delete</i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<form id="modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Bestellung</h4>
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">assignment</i>
+                        <input id="bestellung_artikel" name="bestellung_artikel" type="text" maxlength="255"
+                               class="validate" required>
+                        <label for="bestellung_artikel">Artikel*</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">add</i>
+                        <input id="bestellung_menge" name="bestellung_menge" type="number" step="1" min="1"
+                               class="validate"
+                               value="1"
+                               required>
+                        <label for="bestellung_menge">Menge*</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input id="bestellung_preis_pro_stueck" name="bestellung_preis_pro_stueck" type="number"
+                               step="0.01" class="validate" required>
+                        <label for="bestellung_preis_pro_stueck">Preis pro Stück*</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">date_range</i>
+                        <input id="bestellung_kaufdatum" name="bestellung_kaufdatum" type="text"
+                               class="validate datepicker">
+                        <label for="bestellung_kaufdatum">Kaufdatum</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">comment</i>
+                        <textarea name="bestellung_bemerkung" id="bestellung_bemerkung" rows="10"
+                                  class="materialize-textarea"></textarea>
+                        <label for="bestellung_bemerkung">Bemerkung</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="btn_save" type="submit" class="waves-effect waves-teal btn green">Speichern</button>
+        <a href="#" class="modal-close waves-effect waves-red btn-flat">Abbrechen</a>
+    </div>
+</form>
+</body>
+</html>
