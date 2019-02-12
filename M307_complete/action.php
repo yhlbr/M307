@@ -23,8 +23,9 @@ if (isset($_GET['action'])) {
     $switch = 'get';
 }
 
+// Fehler bei falscher ID
 if (isset($_GET['id']) && !is_numeric($_GET['id'])) {
-    sendResponse(false, [], 'ID ist nicht numerisch.');
+    sendResponse(false, [], 'ID ist nicht numerisch');
     exit;
 }
 
@@ -33,7 +34,7 @@ if (isset($_GET['id']) && !is_numeric($_GET['id'])) {
 // ----------------------------------
 switch ($switch) {
     case 'get':
-        $data = getData('SELECT * FROM autos', $error);
+        $data = query('SELECT * FROM autos', $error);
         if ($data === false) {
             sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.', $error);
         } else {
@@ -41,7 +42,7 @@ switch ($switch) {
         }
         break;
     case 'getByID':
-        $data = getData('SELECT * FROM autos WHERE id = ' . $_GET['id'], $error)[0];
+        $data = query('SELECT * FROM autos WHERE id = ' . intval($_GET['id']), $error)[0];
         if ($data === false) {
             sendResponse(false, [], 'Daten konnten nicht ausgelesen werden.', $error);
         } else {
@@ -49,9 +50,9 @@ switch ($switch) {
         }
         break;
     case 'delete':
-        $result = $con->query('DELETE FROM autos WHERE id = ' . $_GET['id']);
+        $result = query('DELETE FROM autos WHERE id = ' . $_GET['id'], $error);
         if (!$result) {
-            sendResponse(false, [], 'Eintrag konnte nicht gelöscht werden.', $con->error);
+            sendResponse(false, [], 'Eintrag konnte nicht gelöscht werden.', $error);
         } else {
             sendResponse(true);
         }
@@ -61,19 +62,20 @@ switch ($switch) {
         if (validateData($data) !== true) {
             sendResponse(false, [], validateData($data));
         } else {
-            $stmt = $con->prepare("UPDATE autos
+            $result = prepared_query("UPDATE autos
             SET autoname = ?, kraftstoff = ?, bauart = ?, farbe = ?
-            WHERE id = " . $_GET['id']);
-            $stmt->bind_param(
+            WHERE id = " . $_GET['id'],
                 'ssss',
-                $data['autoname'],
-                $data['kraftstoff'],
-                $data['bauart'],
-                $data['farbe']
+                [
+                    $data['autoname'],
+                    $data['kraftstoff'],
+                    $data['bauart'],
+                    $data['farbe']
+                ],
+                $error
             );
-            $res = $stmt->execute();
-            if (!$res) {
-                sendResponse(false, [], 'Eintrag konnte nicht aktualisiert werden.', $stmt->error);
+            if (!$result) {
+                sendResponse(false, [], 'Eintrag konnte nicht aktualisiert werden.', $error);
             } else {
                 sendResponse(true);
             }
@@ -84,32 +86,34 @@ switch ($switch) {
         if (validateData($data) !== true) {
             sendResponse(false, [], validateData($data));
         } else {
-            $stmt = $con->prepare('INSERT INTO autos(autoname, kraftstoff, farbe, bauart) VALUES(?,? ,? ,?)');
-            $stmt->bind_param(
+            $result = prepared_query('INSERT INTO autos(autoname, kraftstoff, farbe, bauart) VALUES(?,? ,? ,?)',
                 'ssss',
-                $data['autoname'],
-                $data['kraftstoff'],
-                $data['farbe'],
-                $data['bauart']
+                [
+                    $data['autoname'],
+                    $data['kraftstoff'],
+                    $data['farbe'],
+                    $data['bauart']
+                ],
+                $error
             );
-            $res = $stmt->execute();
-            if (!$res) {
-                sendResponse(false, [], 'Eintrag konnte nicht hinzugefügt werden.', $stmt->error);
+            if (!$result) {
+                sendResponse(false, [], 'Eintrag konnte nicht hinzugefügt werden.', $error);
             } else {
                 sendResponse(true);
             }
         }
         break;
     case "tanken":
-        $result = $con->query('UPDATE autos SET betankungen = betankungen + 1 WHERE id = ' . $_GET['id']);
+        $result = query('UPDATE autos SET betankungen = betankungen + 1 WHERE id = ' . $_GET['id'], $error);
         if (!$result) {
-            sendResponse(false, [], 'Auto konnte nicht betankt werden.', $con->error);
+            sendResponse(false, [], 'Auto konnte nicht betankt werden.', $error);
         } else {
             sendResponse(true);
         }
         break;
 }
 
+// Gibt die JSON-Daten aus
 function sendResponse($success, $data = [], $error = "", $debug_msg = "")
 {
     echo json_encode([
@@ -120,6 +124,7 @@ function sendResponse($success, $data = [], $error = "", $debug_msg = "")
     ]);
 }
 
+// Validiert die Daten
 function validateData($data)
 {
     if (empty($data['autoname'])) {
@@ -142,7 +147,7 @@ function validateData($data)
     return true;
 }
 
-function getData($query, &$debug_msg = "")
+function query($query, &$debug_msg = "")
 {
     global $con;
     $result = $con->query($query);
@@ -150,9 +155,48 @@ function getData($query, &$debug_msg = "")
         $debug_msg = $con->error;
         return false;
     }
+
+    // Wenn kein Resultat verfügbar
+    if (is_bool($result)) return $result;
+
     return $result->fetch_all(MYSQLI_ASSOC);
 }
 
+function prepared_query($query, $types = '', $values = [], &$debug_msg = "")
+{
+    global $con;
+    $stmt = $con->prepare($query);
+
+    // Parameter binden
+    if (!empty($types)) {
+        $data = [];
+        $data[] = &$types;
+        foreach ($values as &$value) {
+            $data[] = &$value;
+        }
+        call_user_func_array(array($stmt, 'bind_param'), $data);
+    }
+
+    // Statement ausführen
+    $success = $stmt->execute();
+
+    if (!$success) {
+        $debug_msg = $stmt->error;
+        return false;
+    }
+
+    // Resultat auslesen
+    $res = $stmt->get_result();
+
+    // Wenn kein Fehler aufgetreten ist und kein Resultat verfügbar
+    if (is_bool($res) && $stmt->errno === 0 && $success) return true;
+    // Wenn kein Resultat verfügbar, aber Fehler aufgetreten ist
+    else if (is_bool($res)) return false;
+
+    return $res->fetch_all(MYSQLI_ASSOC);
+}
+
+// Erstellt die Datenbank
 function createDB()
 {
     global $config;
