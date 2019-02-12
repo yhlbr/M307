@@ -60,7 +60,7 @@ function init_modal() {
 
         // Formular auslesen
         var values = $(this).serializeArray();
-        console.log(values, 'Speichern');
+        // console.log(values, 'Speichern');
 
         // Anfrage wählen (update oder insert)
         var suffix = '';
@@ -162,7 +162,6 @@ function load_table() {
                     type: 'GET',
                     dataType: 'json',
                     success: function (response) {
-                        console.log(response);
                         // Bei Fehler abbrechen
                         if (!response.success) {
                             $.t_error(response.error);
