@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb594cc4-c9f1-4019-99bd-3e74467915d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/M307_complete/config.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M307_complete/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M307_complete/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testfälle.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Testfälle.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M307_complete/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/M307_complete/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,47 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_complete/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_complete/action.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_complete/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="213" column="9" lean-forward="true" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M307_complete/config.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="421">
+              <caret line="175" column="74" selection-start-line="175" selection-start-column="74" selection-end-line="175" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -231,12 +191,12 @@
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
+              <item name="M307_noten" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XAMPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="M307_complete" type="462c0819:PsiDirectoryNode" />
+              <item name="M307_noten" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -290,18 +250,18 @@
       <workItem from="1549351885309" duration="23298000" />
       <workItem from="1549438403752" duration="23762000" />
       <workItem from="1549870380244" duration="21822000" />
-      <workItem from="1549956786417" duration="1434000" />
+      <workItem from="1549956786417" duration="1692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81450000" />
+    <option name="totallyTimeSpent" value="81708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18976545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -657,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="71" column="53" lean-forward="true" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/M307_complete/action.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -678,6 +631,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/M307_noten/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/M307_complete/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -687,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/M307_complete/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+        <state relative-caret-position="421">
+          <caret line="175" column="74" selection-start-line="175" selection-start-column="74" selection-end-line="175" selection-end-column="74" />
         </state>
       </provider>
     </entry>
