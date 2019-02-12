@@ -24,8 +24,8 @@ function clear_modal() {
     $('select').formSelect();
 
     // Fehlermeldungen entfernen
-    $('#kraftstoff_error').text("");
-    $('#bauart_error').text("");
+    $('#kraftstoff_error').text('');
+    $('#bauart_error').text('');
 }
 
 function init_modal() {
@@ -39,17 +39,17 @@ function init_modal() {
         // Felder, die nicht HTML5 überprüfbar sind, auswerten
         var valid = true;
         if (!$('#kraftstoff').val()) {
-            $('#kraftstoff_error').text("Bitte Kraftstoff angeben.");
+            $('#kraftstoff_error').text('Bitte Kraftstoff angeben');
             valid = false;
         } else {
-            $('#kraftstoff_error').text("");
+            $('#kraftstoff_error').text('');
         }
 
         if (!$('#bauart').val()) {
-            $('#bauart_error').text("Bitte Bauart angeben.");
+            $('#bauart_error').text('Bitte Bauart angeben');
             valid = false;
         } else {
-            $('#bauart_error').text("");
+            $('#bauart_error').text('');
         }
         // Falls Fehler aufgekommen, nicht fortfahren
         if (!valid) return;
@@ -73,11 +73,11 @@ function init_modal() {
             success: function (response) {
                 // Erfolg oder Fehler anzeigen
                 if (response.success) {
-                    M.toast({html: "Auto gespeichert.", classes: 'green'});
+                    $.t_success('Auto gespeichert');
                     M.Modal.getInstance($modal).close();
                     clear_modal();
                 } else {
-                    M.toast({html: "Fehler: " + response.error, classes: 'red'});
+                    $.t_error(response.error);
                     console.log(response.debug_msg);
                 }
                 // Tabelle aktualisieren
@@ -87,6 +87,7 @@ function init_modal() {
     });
 }
 
+// Tabelle vorbereiten und Daten laden
 function init_list() {
     // Vorlagerow zwischenspeichern und anschliessend entfernen
     var $tpl = $('#autos_liste_template');
@@ -102,6 +103,7 @@ function init_list() {
     load_table();
 }
 
+// Tabellendaten laden
 function load_table() {
     var $anzeige = $('#autos_liste_anzeige');
 
@@ -113,7 +115,7 @@ function load_table() {
         success: function (response) {
             // Bei Fehler nicht fortfahren und Fehler ausgeben
             if (!response.success) {
-                M.toast({html: "Fehler: " + response.error, classes: 'red'});
+                $.t_error(response.error);
                 console.log(response.debug_msg);
                 return;
             }
@@ -139,10 +141,10 @@ function load_table() {
                     success: function (response) {
                         // Erfolgs- oder Fehlermeldung ausgeben
                         if (!response.success) {
-                            M.toast({html: 'Fehler: ' + response.error, classes: 'red'});
+                            $.t_error(response.error);
                             console.log(response.debug_msg);
                         } else {
-                            M.toast({html: 'Auto betankt', classes: 'green'});
+                            $.t_success('Auto betankt');
                         }
                         load_table();
                     }
@@ -158,7 +160,7 @@ function load_table() {
                         console.log(response);
                         // Bei Fehler abbrechen
                         if (!response.success) {
-                            M.toast({html: 'Fehler: ' + response.error, classes: 'red'});
+                            $.t_error(response.error);
                             console.log(response.debug_msg);
                             return;
                         }
@@ -182,12 +184,15 @@ function load_table() {
                     }
                 });
             });
+
+            // Löschen Button binden
             $('.btn_delete', $anzeige).click(function () {
                 // Bestätigung einfordern
                 if (!confirm('Soll der Eintrag wirklich gelöscht werden?')) {
                     return;
                 }
 
+                // Löschvorgang
                 var id = $(this).parents('tr').data('id');
                 $.ajax({
                     url: 'action.php?action=delete&id=' + id,
@@ -196,11 +201,12 @@ function load_table() {
                     success: function (response) {
                         // Erfolgs- oder Fehlermeldung ausgeben
                         if (!response.success) {
-                            M.toast({html: 'Fehler: ' + response.error, classes: 'red'});
+                            $.t_error(response.error);
                             console.log(response.debug_msg);
                         } else {
-                            M.toast({html: 'Eintrag gelöscht', classes: 'green'});
+                            $.t_success('Eintrag gelöscht');
                         }
+                        // Tabelle neu laden
                         load_table();
                     }
                 });
@@ -208,3 +214,13 @@ function load_table() {
         }
     });
 }
+
+// Helperfunktionen
+$.extend({
+    t_success: function (text) {
+        M.toast({html: text, classes: 'green'});
+    },
+    t_error: function (text) {
+        M.toast({html: 'Fehler: ' + text, classes: 'red'});
+    }
+});

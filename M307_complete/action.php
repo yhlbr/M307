@@ -1,20 +1,17 @@
 <?php
-define('MYSQL_HOST', "localhost");
-define('MYSQL_USER', "root");
-define('MYSQL_PW', "");
-define('MYSQL_DB', "yannickh");
+$config = include('config.inc.php');
 
 // Verbindung zur DB herstellen
-$con = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PW);
+$con = new mysqli($config['host'], $config['user'], $config['pw']);
 
 // DB Überprüfen
-if (!$con->select_db(MYSQL_DB)) {
+if (!$con->select_db($config['db'])) {
     $res = createDB();
     if (!$res) {
         sendResponse(false, [], 'Datenbank konnte nicht erstellt werden');
         exit;
     }
-    $con->select_db(MYSQL_DB);
+    $con->select_db($config['db']);
 }
 
 // Ist im Browser in der Adressleiste eine GET - Vaiable mit dem Namen action?
@@ -126,16 +123,16 @@ function sendResponse($success, $data = [], $error = "", $debug_msg = "")
 function validateData($data)
 {
     if (empty($data['autoname'])) {
-        return 'Auto-Name ist nicht ausgefüllt.';
+        return 'Auto-Name ist nicht ausgefüllt';
     }
     if (empty($data['kraftstoff'])) {
-        return 'Kraftstoff ist nicht ausgefüllt.';
+        return 'Kraftstoff ist nicht ausgefüllt';
     }
     if (empty($data['bauart'])) {
-        return 'Bauart ist nicht ausgefüllt.';
+        return 'Bauart ist nicht ausgefüllt';
     }
     if (empty($data['farbe'])) {
-        return 'Farbe ist nicht ausgefüllt.';
+        return 'Farbe ist nicht ausgefüllt';
     }
 
     if (!preg_match('/^#[a-f0-9]{6}$/i', $data['farbe'])) {
@@ -158,16 +155,18 @@ function getData($query, &$debug_msg = "")
 
 function createDB()
 {
+    global $config;
+
     // DB existiert nicht, also neu erstellen
-    $con = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PW);
-    $createdb = "CREATE DATABASE IF NOT EXISTS " . MYSQL_DB . " DEFAULT CHARACTER SET utf8";
+    $con = new mysqli($config['host'], $config['user'], $config['pw']);
+    $createdb = "CREATE DATABASE IF NOT EXISTS " . $config['db'] . " DEFAULT CHARACTER SET utf8";
     $res_db = $con->query($createdb);
     if (!$res_db) {
         return false;
     }
 
     // Datenbank auswählen
-    if (!$con->select_db(MYSQL_DB)) return false;
+    if (!$con->select_db($config['db'])) return false;
 
     // Tabelle erstellen
     $sql = 'CREATE TABLE IF NOT EXISTS autos (
